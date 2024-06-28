@@ -14,4 +14,28 @@ Preferred DNS server: 192.168.1.10 (or use an external DNS server like 8.8.8.8 f
 
 Next, I installed the Active Directory Domain Services and promoted that server to a domain controller. 
 
+Promote the Server to a Domain Controller:
+
+Once the installation is complete, a flag with a warning symbol will appear in the Server Manager dashboard. Click on it and then click Promote this server to a domain controller.
+Deployment Configuration:
+Choose Add a new forest and provide a root domain name (e.g., example.local).
+Click Next.
+Domain Controller Options:
+Choose the Forest functional level and Domain functional level (Windows Server 2016 is a good choice for both).
+Enter a Directory Services Restore Mode (DSRM) password.
+Click Next.
+DNS Options:
+You may see a warning about DNS delegation. Click Next.
+Additional Options:
+Verify the NetBIOS name assigned to the domain and click Next.
+Paths:
+Accept the default paths for the database, log files, and SYSVOL. Click Next.
+Review Options:
+Review your selections and click Next.
+Prerequisites Check:
+The wizard will run a prerequisites check. If everything is in order, click Install.
+Reboot:
+The server will automatically reboot once the installation is complete.
+
+
 https://github.com/stephon99/SOC-Project/issues/1#issue-2381187290
