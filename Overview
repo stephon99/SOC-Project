@@ -18,37 +18,17 @@ Prepare the VM Environment:
 
 Install Wazuh Manager:
 
-Add the Wazuh Repository:
-bash
-Copy code
-curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | sudo apt-key add -
-echo "deb https://packages.wazuh.com/4.x/apt/ stable main" | sudo tee /etc/apt/sources.list.d/wazuh.list
+
 Install the Wazuh Manager:
-bash
-Copy code
-sudo apt-get update
-sudo apt-get install wazuh-manager -y
-Start and Enable Wazuh Manager:
-bash
-Copy code
-sudo systemctl enable wazuh-manager
-sudo systemctl start wazuh-manager
+
 Install Wazuh API:
 
 Install Node.js and npm:
-bash
-Copy code
-curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
-sudo apt-get install nodejs -y
+
 Install Wazuh API:
-bash
-Copy code
-sudo apt-get install wazuh-api -y
+
 Start and Enable Wazuh API:
-bash
-Copy code
-sudo systemctl enable wazuh-api
-sudo systemctl start wazuh-api
+
 3. Install Wazuh Agents on Client Machines
 Windows Agent:
 Download the Wazuh agent installer from the Wazuh website.
@@ -56,15 +36,10 @@ Install the agent on the Windows Server and Windows 10 Client.
 Configure the agent to communicate with the Wazuh Manager by editing the ossec.conf file.
 Linux Agent:
 Add the Wazuh repository and install the agent on the Linux server:
-bash
-Copy code
-sudo apt-get install wazuh-agent -y
+
 Configure the agent to communicate with the Wazuh Manager by editing the ossec.conf file.
 Start and enable the Wazuh agent:
-bash
-Copy code
-sudo systemctl enable wazuh-agent
-sudo systemctl start wazuh-agent
+
 4. Simulate Attacks
 Phishing Attack Simulation: Use the Kali Linux machine to simulate a phishing attack against the Windows 10 client. Document the steps and observe the detection capabilities of Wazuh.
 Malware Infection: Deploy a controlled malware sample on the Windows 10 client and analyze the behavior using Wazuh.
