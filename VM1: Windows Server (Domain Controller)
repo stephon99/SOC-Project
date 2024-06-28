@@ -13,3 +13,5 @@ Default gateway: 192.168.1.1
 Preferred DNS server: 192.168.1.10 (or use an external DNS server like 8.8.8.8 for now)
 
 Next, I installed the Active Directory Domain Services and promoted that server to a domain controller. 
+
+https://github.com/stephon99/SOC-Project/issues/1#issue-2381187290
