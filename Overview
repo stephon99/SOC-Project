@@ -1,0 +1,106 @@
+Project Title: Simulated SOC Environment for Threat Detection and Incident Response using Wazuh
+Project Overview
+Create a simulated Security Operations Center (SOC) environment that includes setting up and configuring Wazuh for security monitoring, detecting simulated attacks, and documenting incident response procedures. This project will demonstrate your practical skills in threat detection, analysis, and response, which are crucial for a SOC analyst role.
+
+Project Steps
+1. Setup and Configuration
+Virtual Environment: Use virtualization software like VMware or VirtualBox to create a network of virtual machines (VMs) representing different components of a typical IT infrastructure.
+VM1: Windows Server (Domain Controller)
+VM2: Windows 10 Client
+VM3: Linux Server (Web Server)
+VM4: Kali Linux (Attacker Machine)
+VM5: Wazuh Manager (SIEM Tool)
+2. Deploy Wazuh (SIEM Tool)
+Set Up Your Virtual Machine for Wazuh:
+
+Create a New VM: Allocate enough resources (e.g., 2 CPUs, 4GB RAM, and 20GB disk space). Install Ubuntu Server on this VM.
+Prepare the VM Environment:
+
+Install Wazuh Manager:
+
+Add the Wazuh Repository:
+bash
+Copy code
+curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | sudo apt-key add -
+echo "deb https://packages.wazuh.com/4.x/apt/ stable main" | sudo tee /etc/apt/sources.list.d/wazuh.list
+Install the Wazuh Manager:
+bash
+Copy code
+sudo apt-get update
+sudo apt-get install wazuh-manager -y
+Start and Enable Wazuh Manager:
+bash
+Copy code
+sudo systemctl enable wazuh-manager
+sudo systemctl start wazuh-manager
+Install Wazuh API:
+
+Install Node.js and npm:
+bash
+Copy code
+curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+sudo apt-get install nodejs -y
+Install Wazuh API:
+bash
+Copy code
+sudo apt-get install wazuh-api -y
+Start and Enable Wazuh API:
+bash
+Copy code
+sudo systemctl enable wazuh-api
+sudo systemctl start wazuh-api
+3. Install Wazuh Agents on Client Machines
+Windows Agent:
+Download the Wazuh agent installer from the Wazuh website.
+Install the agent on the Windows Server and Windows 10 Client.
+Configure the agent to communicate with the Wazuh Manager by editing the ossec.conf file.
+Linux Agent:
+Add the Wazuh repository and install the agent on the Linux server:
+bash
+Copy code
+sudo apt-get install wazuh-agent -y
+Configure the agent to communicate with the Wazuh Manager by editing the ossec.conf file.
+Start and enable the Wazuh agent:
+bash
+Copy code
+sudo systemctl enable wazuh-agent
+sudo systemctl start wazuh-agent
+4. Simulate Attacks
+Phishing Attack Simulation: Use the Kali Linux machine to simulate a phishing attack against the Windows 10 client. Document the steps and observe the detection capabilities of Wazuh.
+Malware Infection: Deploy a controlled malware sample on the Windows 10 client and analyze the behavior using Wazuh.
+Brute Force Attack: Simulate a brute force attack on the Windows Server’s RDP (Remote Desktop Protocol) service and capture the logs.
+5. Incident Detection and Analysis with Wazuh
+Log Analysis: Use Wazuh to analyze logs and detect the simulated attacks.
+Phishing Detection: Identify phishing attempts through email logs and endpoint behavior.
+Malware Indicators: Detect malware indicators in the endpoint logs and network traffic.
+Brute Force Attempts: Analyze login attempts and identify patterns indicating a brute force attack.
+6. Incident Response Procedures
+Response Plan: Develop and document incident response plans for each type of attack.
+Containment: Steps to isolate affected systems.
+Eradication: Procedures to remove threats from the systems.
+Recovery: Steps to restore systems to normal operation.
+Report Generation: Create detailed incident reports for each simulated attack, including:
+Summary: Brief overview of the incident.
+Detection: How the incident was detected.
+Analysis: Detailed analysis of the incident.
+Response: Actions taken to contain, eradicate, and recover from the incident.
+Lessons Learned: Key takeaways and recommendations for future prevention.
+Deliverables
+Project Documentation: A comprehensive document detailing the setup, configuration, attack simulations, log analysis, and incident response procedures.
+Incident Reports: Individual incident reports for each simulated attack.
+Screenshots and Logs: Include relevant screenshots of your Wazuh dashboards, logs, and any other relevant outputs to demonstrate your work.
+Video Walkthrough (Optional): A video presentation or screen recording showing the key steps of your project, including the setup, attack simulations, and response actions.
+Tools and Resources
+Virtualization Software: VMware Workstation, VirtualBox
+Operating Systems: Windows Server, Windows 10, Linux (Ubuntu or CentOS), Kali Linux
+SIEM Tool: Wazuh
+Network Monitoring: Zeek, Suricata (Optional)
+Endpoint Security: Wazuh agents
+Other Tools: Wireshark for packet analysis, Metasploit for exploiting vulnerabilities
+Project Outcome
+By completing this project, you will demonstrate your ability to:
+
+Set up and configure Wazuh for security monitoring.
+Detect and analyze security incidents using Wazuh.
+Respond effectively to different types of attacks.
+Document and communicate your findings clearly.
