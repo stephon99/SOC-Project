@@ -1,0 +1,15 @@
+Configure the Network Settings:
+
+Static IP Address:
+Open Control Panel.
+Go to Network and Sharing Center > Change adapter settings.
+Right-click on the network adapter and select Properties.
+Select Internet Protocol Version 4 (TCP/IPv4) and click Properties.
+Set a static IP address. For example:
+
+IP address: 192.168.1.10
+Subnet mask: 255.255.255.0
+Default gateway: 192.168.1.1
+Preferred DNS server: 192.168.1.10 (or use an external DNS server like 8.8.8.8 for now)
+
+Next, I installed the Active Directory Domain Services and promoted that server to a domain controller. 
