@@ -5,4 +5,4 @@ Click on Windows Installer
 https://documentation.wazuh.com/current/installation-guide/wazuh-agent/wazuh-agent-package-windows.html
 
 
-Next, we will need to install a Linux server on a third VM. We will also be installing Wazuh on that machine (As well as on VM2: Windows Server 2010)
+Next, we will need to install a Linux server on a third VM (VM5). We will also be installing Wazuh on that machine (As well as on VM2: Windows Server 2010)
