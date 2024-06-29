@@ -6,3 +6,6 @@ https://documentation.wazuh.com/current/installation-guide/wazuh-agent/wazuh-age
 
 
 Next, we will need to install a Linux server on a third VM (VM5). We will also be installing Wazuh on that machine (As well as on VM2: Windows Server 2010)
+
+ISO Image link:
+https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbm9Xa0JPQnNIS3FmclBLQldwUWczdVpKc1UxZ3xBQ3Jtc0ttcFJlU3dLM0FRSDd4YmtZNmNmNDUtcVZJMU55alM4T2xwdzB6YkFteHI1VW9GY1Fad0J1cFI1UFR6dEV0R3BfNm9SRU1ibWUxc0gxSnM2djVNMXpVWnRkaVJkLXRSbmlXNVpXTjgtRnVRVnFTUFVnRQ&q=https%3A%2F%2Fubuntu.com%2Fdownload%2Fdesktop&v=hYaCCpvjsEY
