@@ -1,7 +1,5 @@
 https://documentation.wazuh.com/current/installation-guide/wazuh-agent/wazuh-agent-package-windows.html
-
-Click on Windows Installer
-
+lick on Windows Installer
 https://documentation.wazuh.com/current/installation-guide/wazuh-agent/wazuh-agent-package-windows.html
 
 
@@ -11,4 +9,4 @@ ISO Image link:
 https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbm9Xa0JPQnNIS3FmclBLQldwUWczdVpKc1UxZ3xBQ3Jtc0ttcFJlU3dLM0FRSDd4YmtZNmNmNDUtcVZJMU55alM4T2xwdzB6YkFteHI1VW9GY1Fad0J1cFI1UFR6dEV0R3BfNm9SRU1ibWUxc0gxSnM2djVNMXpVWnRkaVJkLXRSbmlXNVpXTjgtRnVRVnFTUFVnRQ&q=https%3A%2F%2Fubuntu.com%2Fdownload%2Fdesktop&v=hYaCCpvjsEY
 
 
-On Wazuh Manager, the IP for Wazuh is showing as 10.0.2.15
+On Wazuh Manager, the IP for Wazuh is showing as 192.168.1.104
