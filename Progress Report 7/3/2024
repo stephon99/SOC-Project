@@ -1,0 +1,24 @@
+### Completed Tasks
+
+1. **Virtual Environment Setup:**
+   - Created virtual machines using VMware Workstation:
+     - VM1: Windows Server (Domain Controller)
+     - VM2: Windows 10 Client
+     - VM4: Kali Linux (Attacker Machine)
+     - VM5: Originally intended for Wazuh Manager (now for ELK Stack)
+
+2. **Domain Controller Configuration:**
+   - Installed Windows Server on VM1.
+   - Configured Active Directory and DNS services.
+   - Created a domain (`master.local`).
+   - Added the Windows 10 Client (VM2) to the domain.
+
+3. **Initial Wazuh Setup (Scrapped):**
+   - Installed Wazuh Manager on VM5 (Ubuntu Server).
+   - Faced multiple issues with Wazuh API and configuration.
+   - Decided to switch to the ELK Stack due to complications with Wazuh.
+
+4. **Preparation for ELK Stack Installation:**
+   - Decided to use the ELK Stack (Elasticsearch, Logstash, Kibana) for the project.
+
+Feel free to add these to your GitHub repository. Let me know if you need any more assistance!
